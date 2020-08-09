@@ -19,7 +19,7 @@ CONFIG=$(</data/transmission/settings.json)
 # Defaults
 CONFIG=$(bashio::jq "${CONFIG}" ".\"incomplete-dir\"=\"/share/incomplete\"")
 CONFIG=$(bashio::jq "${CONFIG}" ".\"incomplete-dir-enabled\"=true")
-CONFIG=$(bashio::jq "${CONFIG}" ".\"download-dir\"=\"/share/downloads\"")
+CONFIG=$(bashio::jq "${CONFIG}" ".\"download-dir\"=\"/share/plex\"")
 CONFIG=$(bashio::jq "${CONFIG}" ".\"rpc-whitelist-enabled\"=false")
 CONFIG=$(bashio::jq "${CONFIG}" ".\"rpc-host-whitelist-enabled\"=false")
 CONFIG=$(bashio::jq "${CONFIG}" ".\"bind-address-ipv4\"=\"0.0.0.0\"")
